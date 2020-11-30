@@ -1,0 +1,22 @@
+.tableTitulo th{
+    border: 1px solid #000;
+    padding: 5px;
+}
+.contas th{
+    font-weight: normal;
+    border: 1px solid #00000075;
+    padding: 5px;
+    text-align: left;
+  }
+.botaoCadastrar{
+  background: grey;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff;
+  cursor: pointer;
+}
+.valorSaldo{
+  margin: 50px 0;
+}

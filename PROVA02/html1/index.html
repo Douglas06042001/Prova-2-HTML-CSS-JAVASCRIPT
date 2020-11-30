@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Controle de Contas</title>
+    <link rel="stylesheet" href="../css/stilo.css">
+  </head>
+  <body>
+    <h1>Controle de Contas</h1>
+
+    <form>
+      <div id="formulario">
+        <div>
+            <label for="descricao">Descrição:</label>
+            <input type="text" value="" id="descricao">   
+        </div>
+
+        <div>
+            <label for="valor">Valor:</label>
+            <input type="text" value="" id="valor">
+        </div>
+
+        <div>
+            <label for="dtvencimento">Data De Vencimento:</label>
+            <input type="date" value="" id="dtvencimento">
+        </div>
+
+        <div>
+            <label for="receitaDespesa">Tipo:</label>
+            <select id="receitaDespesa">
+                <option value="">Selecione</option>
+                <option value="Receita">Receita</option>
+                <option value="Despesa">Despesa</option>
+            </select>
+        </div>
+        <div>
+            <div onclick="realizarProcesso()" class="botaoCadastrar">Salvar</div>
+        </div>
+
+      </div>
+    </form>
+
+    <h2>Contas Cadastradas</h2>
+
+    <table id="tabela">
+      <thead>
+        <tr class="tableTitulo">
+          <th>Descricao</th>
+          <th>Valor</th>
+          <th>Data de Vencimento</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+    </table>
+    <div class="valorSaldo" id="valorSaldo">
+        <input type="hidden" id="saldo" value="0">
+    </div>
+  </body>
+
+  <script src="../js/index.js"></script>
+  
+</html>
